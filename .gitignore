@@ -1,0 +1,7 @@
+/node_modules
+/static
+/uploads
+
+._*
+/public/._*
+/client/._*
