@@ -2,7 +2,7 @@
 
 Allows a user query the Kairos API to check a persons probably ethnicity by submitting an image.
 
-An ethnicity over 50% probably is reported as the predominant ethnicity. Any other ethnicity over 15% probbably is also noted.
+An ethnicity over 50% probably is reported as the predominant ethnicity. Any other ethnicity detected with over 15% confidence is also noted.
 
 # To launch:
 ```
