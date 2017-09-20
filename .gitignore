@@ -1,6 +1,6 @@
 /node_modules
 /static
-/uploads
+/uploads/*
 
 ._*
 /public/._*
