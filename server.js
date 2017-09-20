@@ -18,7 +18,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/api/query', 
-  formidable(),
+  formidable({  uploadDir: './uploads' }),
   apiActions.imagePresentAndValid,
   apiActions.imageToBase64,
   apiActions.queryKairos,

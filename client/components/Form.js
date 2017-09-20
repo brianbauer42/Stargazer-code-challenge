@@ -33,9 +33,14 @@ export default class Form extends Component {
     handleSubmit(e) {
         e.preventDefault();
         if (this.state.image === '') {
-            this.setState({ message: "No image selected!" });    
+            this.setState({ message: "No image selected!" });
+            return ;
         } else {
-            this.setState({ message: "Working..." });
+            this.setState({
+                message: "Working...",
+                image: '',
+                imagePreviewUrl: ''
+            });
         }
         var formElement = document.querySelector('#imageSelectionForm');
         var formData = new FormData(formElement);
@@ -56,15 +61,13 @@ export default class Form extends Component {
                 this.props.addToAPIHistory(result);
                 this.imageSelection.value = '';
                 this.setState({
-                    message: 'Done!',
-                    image: '',
-                    imagePreviewUrl: ''
+                    message: 'Done!'
                 });
                 setTimeout(() => {
                     this.setState({
                         message: 'Select another image...',
                     });
-                }, 2500);3
+                }, 2500);
             }
         });
     }
