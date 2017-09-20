@@ -1,3 +1,77 @@
 body {
-    background: rgb(118, 88, 176) url('images/cloud.png') no-repeat fixed bottom;
+    background: #5486f6 url('/stars.svg');
+}
+
+.app {
+    background: url('/cloud.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 100% auto;
+    height: 100vh;
+}
+
+.uploadFormContainer {
+    margin: 5vw;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 40px;
+    margin-right: 10%;
+}
+
+.title {
+    display: inline-block;
+}
+
+.titleBar {
+    vertical-align: middle;
+    margin: 5vw;
+}
+
+.preview {
+    max-width: 50%;
+    border-radius: 6px;
+    border: 4px solid black;
+    background: white;
+    padding: 10px;
+}
+
+.statusMessage {
+    max-width: 33%;
+    border-radius: 6px;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+.resultsContainer {
+
+    white-space: nowrap;
+    overflow: auto;
+    width: 100vw;
+    background-color: #b3d4fc;
+    border-width: 5px 0 5px 0;
+    border-color: black;
+    border-style: solid;
+}
+
+.resultCard {
+    white-space: wrap;
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resultImage {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.title, .description {
+    color: white;
+    font-family: 'Muli', sans-serif;
 }
