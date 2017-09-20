@@ -7,6 +7,7 @@ An ethnicity over 50% probably is reported as the predominant ethnicity. Any oth
 # To launch:
 ```
 git clone https://github.com/brianbauer42/Stargazer-code-challenge
+cd Stargazer-code-challenge
 npm install
 npm run go
 ```
